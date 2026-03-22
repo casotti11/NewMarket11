@@ -19,9 +19,9 @@ import {
   ShoppingBag
 } from "lucide-react";
 
-import argentinaImg from "./argentina.png";
-import benissuaiImg from "./benissuai.jpg";
-import heroBg from "./hero-bg.png";
+const argentinaImg = "/argentina.png";
+const benissuaiImg = "/benissuai.jpg";
+const heroBg = "/hero-bg.png";
 
 const WHATSAPP_LINK = "https://wa.me/34692669449?text=Hola%20NEWMARKET%2C%20me%20gustar%C3%ADa%20vender%20mi%20equipo.%20%C2%BFPod%C3%A9is%20darme%20una%20valoraci%C3%B3n%3F";
 const WHATSAPP_BUY_LINK = "https://wa.me/34692669449?text=Hola%20NEWMARKET%2C%20estoy%20interesado%20en%20comprar%20un%20dispositivo.%20%C2%BFTen%C3%A9is%20stock%20disponible%3F";
@@ -153,7 +153,6 @@ export default function App() {
               WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)'
             }}
             loading="eager"
-            referrerPolicy="no-referrer"
           />
         </div>
         {/* Overlay for text readability */}
@@ -271,7 +270,6 @@ export default function App() {
                     src={store.image} 
                     alt={`Fachada de ${store.name}`}
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    referrerPolicy="no-referrer"
                     loading="lazy"
                   />
                 </div>
